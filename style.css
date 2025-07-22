@@ -1,0 +1,60 @@
+body{
+    margin: o;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.cookie-banner {
+            position: fixed;
+            bottom: 2px;
+            left: 0px;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; 
+            transition: transform 0.9s ease-in-out;
+            transform: translateY(100%); 
+        }
+
+.cookie-banner.show{
+    transform: translateY(0);
+}
+
+.cookie-banner-buttons button{
+    color: rgb(255, 255, 255);
+    padding:4px 12px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 125px;
+    cursor: pointer;
+}
+button.accept-button{
+    background-color: rgb(96, 184, 91);
+
+}
+button.accept-button:hover{
+    background-color: rgb(66, 129, 63);
+
+}
+button.close-button{
+    background-color: tomato;
+}
+button.close-button:hover{
+    background-color: rgb(179, 71, 52);
+}
+
+
+.cookie-banner p a{
+    color: rgb(50, 177, 205);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.cookie-banner p a:hover{
+    text-decoration: underline;
+    font-size: 1.03rem;
+}
